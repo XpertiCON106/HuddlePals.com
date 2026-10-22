@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { AppStoreBadge } from "../components/AppStoreBadge";
-import { CONTACT_EMAIL } from "../config";
+import { DownloadButton } from "../components/DownloadButton";
+import { CONTACT_EMAIL, IN_BETA } from "../config";
 import { usePageMeta } from "../usePageMeta";
 
 export function Support() {
@@ -20,11 +20,19 @@ export function Support() {
       <div className="faq">
         <article>
           <h2>How do I download it?</h2>
-          <p>
-            HuddlePals is on the App Store. You need an iPhone running iOS 17 or later. Download
-            the app, open it, and sign in with Apple.
-          </p>
-          <AppStoreBadge />
+          {IN_BETA ? (
+            <p>
+              HuddlePals is in beta on TestFlight. You need an iPhone running iOS 17 or later.
+              Install TestFlight from the App Store, then tap the link below to join the beta.
+              Open HuddlePals and sign in with Apple.
+            </p>
+          ) : (
+            <p>
+              HuddlePals is on the App Store. You need an iPhone running iOS 17 or later. Download
+              the app, open it, and sign in with Apple.
+            </p>
+          )}
+          <DownloadButton />
         </article>
         <article>
           <h2>How do I start or join a huddle?</h2>
@@ -62,7 +70,7 @@ export function Support() {
       <p className="fine">
         How we handle photos and account data is in the <Link to="/privacy">Privacy Policy</Link>.
       </p>
-      <AppStoreBadge />
+      <DownloadButton />
     </div>
   );
 }

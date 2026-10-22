@@ -1,4 +1,5 @@
-import { AppStoreBadge } from "../components/AppStoreBadge";
+import { BetaNote, DownloadButton } from "../components/DownloadButton";
+import { IN_BETA } from "../config";
 import { usePageMeta } from "../usePageMeta";
 
 const steps = [
@@ -31,7 +32,7 @@ const steps = [
 export function About() {
   usePageMeta(
     "About — HuddlePals",
-    "HuddlePals is a private photo app for small groups. Post one photo a day, unlock everyone else's, and keep a shared streak. On the App Store for iPhone.",
+    `HuddlePals is a private photo app for small groups. Post one photo a day, unlock everyone else's, and keep a shared streak. ${IN_BETA ? "In beta on TestFlight" : "On the App Store"} for iPhone.`,
   );
 
   return (
@@ -85,7 +86,8 @@ export function About() {
 
       <section className="closing">
         <h2>Your people. One photo a day.</h2>
-        <AppStoreBadge />
+        <DownloadButton />
+        <BetaNote />
       </section>
     </div>
   );

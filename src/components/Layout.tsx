@@ -1,5 +1,5 @@
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
-import { AppStoreBadge } from "./AppStoreBadge";
+import { DownloadButton } from "./DownloadButton";
 
 export function Layout() {
   const home = useLocation().pathname === "/";
@@ -14,7 +14,7 @@ export function Layout() {
             <img src="/logo.webp" alt="" width={458} height={327} />
             <span>HuddlePals</span>
           </Link>
-          <AppStoreBadge />
+          <DownloadButton />
         </div>
       </header>
       <main id="main">

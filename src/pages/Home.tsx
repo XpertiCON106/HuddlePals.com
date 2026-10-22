@@ -1,4 +1,4 @@
-import { AppStoreBadge } from "../components/AppStoreBadge";
+import { BetaNote, DownloadButton } from "../components/DownloadButton";
 import { usePageMeta } from "../usePageMeta";
 
 export function Home() {
@@ -23,7 +23,8 @@ export function Home() {
         <h1>HuddlePals</h1>
         <p className="home-tagline">One photo a day. Just your people.</p>
         <p className="home-pitch">Post yours to see theirs.</p>
-        <AppStoreBadge />
+        <DownloadButton />
+        <BetaNote />
       </div>
     </div>
   );
