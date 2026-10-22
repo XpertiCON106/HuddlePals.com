@@ -329,6 +329,11 @@ a:hover {
   margin-bottom: 16px;
 }
 
+.closing .beta-note {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .lede {
   color: var(--muted);
   font-size: 1.08rem;
