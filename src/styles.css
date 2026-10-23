@@ -510,6 +510,37 @@ a:hover {
   text-underline-offset: 3px;
 }
 
+.takedown {
+  background: var(--white);
+  border-radius: 18px;
+  border-left: 4px solid #E5484D;
+  padding: 16px 18px 18px;
+  margin: 0 0 18px;
+  box-shadow: 0 10px 28px rgba(72, 36, 22, 0.06);
+}
+
+.takedown h2 {
+  font-family: var(--serif);
+  font-size: 1.22rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+}
+
+.takedown p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.takedown p + p {
+  margin-top: 8px;
+}
+
+.takedown a {
+  color: var(--ink);
+  text-underline-offset: 3px;
+}
+
 .faq {
   display: grid;
   gap: 12px;

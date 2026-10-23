@@ -3,10 +3,12 @@ import { DownloadButton } from "../components/DownloadButton";
 import { CONTACT_EMAIL, IN_BETA } from "../config";
 import { usePageMeta } from "../usePageMeta";
 
+const REMOVAL_SUBJECT = "Intimate image removal request";
+
 export function Support() {
   usePageMeta(
     "Support — HuddlePals",
-    "Get help with HuddlePals: download the app, start or join a huddle, delete your account, or report a photo.",
+    "Get help with HuddlePals: download the app, start or join a huddle, delete your account, report a photo, or ask us to remove an intimate image shared without consent.",
   );
 
   return (
@@ -16,6 +18,28 @@ export function Support() {
       <p className="contact-line">
         Email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
       </p>
+
+      <section className="takedown" aria-labelledby="takedown-title">
+        <h2 id="takedown-title">Report an intimate image shared without consent</h2>
+        <p>
+          If an intimate image of you, or of someone you are authorized to act for, was shared on
+          HuddlePals without consent, you can ask us to remove it, whether or not you have an
+          account. Report the photo in the app, or email{" "}
+          <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(REMOVAL_SUBJECT)}`}>
+            {CONTACT_EMAIL}
+          </a>{" "}
+          with the subject “{REMOVAL_SUBJECT}.”
+        </p>
+        <p>
+          Include your physical or electronic signature, enough information to find the image (such
+          as the huddle, the date, and the poster’s display name), a brief statement that you
+          believe in good faith it was shared without consent, and how we can contact you. We
+          remove the image as soon as possible, and no later than 48 hours after we receive a valid
+          request. If the person shown is under 18, NCMEC’s{" "}
+          <a href="https://takeitdown.ncmec.org">Take It Down</a> service can also help. Details
+          are in Section 5.3 of the <Link to="/terms">Terms of Service</Link>.
+        </p>
+      </section>
 
       <div className="faq">
         <article>
@@ -38,8 +62,9 @@ export function Support() {
           <h2>How do I start or join a huddle?</h2>
           <p>
             A huddle is a private group of 2 to 8 people. After you sign in, start a huddle and
-            send the invite to the people you want in it, or open an invite someone sent you. Only
-            members of that huddle can see its photos.
+            send the invite to the people you want in it, or open an invite someone sent you. Its
+            photos are end-to-end encrypted for the huddle’s members. We can view a photo only if
+            someone reports it.
           </p>
         </article>
         <article>
