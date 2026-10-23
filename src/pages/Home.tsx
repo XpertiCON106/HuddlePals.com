@@ -4,7 +4,7 @@ import { usePageMeta } from "../usePageMeta";
 export function Home() {
   usePageMeta(
     "HuddlePals — One photo a day. Just your people.",
-    "HuddlePals is a private photo app for groups of 2 to 8. Post one photo a day, unlock everyone else's, and keep a shared streak. End-to-end encrypted. iOS 17+.",
+    "HuddlePals is a private photo app for groups of 2 to 8. Post one photo a day, unlock everyone else's, and keep a shared streak. Photos are end-to-end encrypted. iOS 17+.",
   );
 
   return (

@@ -24,7 +24,7 @@ const steps = [
   {
     n: "4",
     color: "#1C1917",
-    title: "Private and encrypted",
+    title: "Encrypted photos",
     body: "Photos are end-to-end encrypted, and they stay. The huddle is your shared album.",
   },
 ];
@@ -49,7 +49,7 @@ export function About() {
         <li>Sign in with Apple</li>
         <li>Groups of 2–8</li>
         <li>Camera only</li>
-        <li>End-to-end encrypted</li>
+        <li>End-to-end encrypted photos</li>
       </ul>
 
       <section>

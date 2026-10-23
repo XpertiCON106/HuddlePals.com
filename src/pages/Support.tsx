@@ -63,8 +63,8 @@ export function Support() {
           <p>
             A huddle is a private group of 2 to 8 people. After you sign in, start a huddle and
             send the invite to the people you want in it, or open an invite someone sent you. Its
-            photos are end-to-end encrypted for the huddle’s members. We can view a photo only if
-            someone reports it.
+            photos are end-to-end encrypted for the huddle’s members. We generally cannot view a
+            photo unless a member reports it.
           </p>
         </article>
         <article>
