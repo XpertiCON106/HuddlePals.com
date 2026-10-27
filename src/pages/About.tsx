@@ -47,14 +47,14 @@ export function About() {
       <p className="cta-note">For iPhone. Requires iOS 17 or later.</p>
       <ul className="chips">
         <li>Sign in with Apple</li>
-        <li>Groups of 2–8</li>
+        <li>Groups of up to 10</li>
         <li>Camera only</li>
         <li>End-to-end encrypted photos</li>
       </ul>
 
       <section>
         <h2>How it works</h2>
-        <p className="lede">A private group of two to eight. Everyone posts one photo a day.</p>
+        <p className="lede">A private group of up to four, or ten with HuddlePals Plus. Everyone posts one photo a day.</p>
         <div className="steps">
           {steps.map((step) => (
             <article className="step" key={step.n}>
