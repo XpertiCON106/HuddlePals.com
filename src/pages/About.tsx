@@ -54,7 +54,7 @@ export function About() {
 
       <section>
         <h2>How it works</h2>
-        <p className="lede">A private group of up to four, or ten with HuddlePals Plus. Everyone posts one photo a day.</p>
+        <p className="lede">A private group of up to four, or ten with HuddlePals+. Everyone posts one photo a day.</p>
         <div className="steps">
           {steps.map((step) => (
             <article className="step" key={step.n}>

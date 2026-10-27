@@ -62,23 +62,23 @@ export function Support() {
           <h2>How do I start or join a huddle?</h2>
           <p>
             A huddle is a private group of up to 4 people, or up to 10 when the person who keeps it
-            has HuddlePals Plus. After you sign in, start a huddle and send the invite to the people
+            has HuddlePals+. After you sign in, start a huddle and send the invite to the people
             you want in it, or open an invite someone sent you. Its photos and videos are
             end-to-end encrypted for the huddle’s members. We generally cannot view a photo or video
             unless a member reports it.
           </p>
         </article>
         <article>
-          <h2>What is HuddlePals Plus?</h2>
+          <h2>What is HuddlePals+?</h2>
           <p>
-            HuddlePals is free, and everyone you invite joins free. HuddlePals Plus is an optional
+            HuddlePals is free, and everyone you invite joins free. HuddlePals+ is an optional
             subscription, monthly or yearly. With it, the huddles you keep can grow to 10 people,
             you can keep up to 10 huddles, you can post a 6-second video instead of a photo, and you
             can open every past day in your huddles. Get it in the app under Profile → Plan.
           </p>
         </article>
         <article>
-          <h2>How do I cancel or restore HuddlePals Plus?</h2>
+          <h2>How do I cancel or restore HuddlePals+?</h2>
           <p>
             Cancel any time in your iPhone’s Settings → your name → Subscriptions, or in the app
             under Profile → Plan → Manage subscription. Plus stays on until the end of the period
@@ -95,7 +95,7 @@ export function Support() {
             In the app, go to Profile → Delete account. Deleting your account permanently removes
             your login, display name, bio, profile photos, and encryption keys, and signs you out.
             Photos and videos you already deposited stay in the huddle, shown as “Former member,” so
-            the group’s album stays intact. Deleting your account doesn’t cancel HuddlePals Plus:
+            the group’s album stays intact. Deleting your account doesn’t cancel HuddlePals+:
             cancel it first in Settings → your name → Subscriptions. To ask about a specific photo
             or video, email us.
           </p>
