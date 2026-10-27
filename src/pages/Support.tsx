@@ -90,6 +90,15 @@ export function Support() {
           </p>
         </article>
         <article>
+          <h2>How do I delete a huddle?</h2>
+          <p>
+            If you keep the huddle (you created it, or it was handed to you), open it, tap Settings,
+            then Delete huddle. Everyone is removed, and every photo and video in it is deleted for
+            good, for everyone. It can’t be undone. If you’re not its keeper, you can leave the
+            huddle instead.
+          </p>
+        </article>
+        <article>
           <h2>How do I delete my account?</h2>
           <p>
             In the app, go to Profile → Delete account. Deleting your account permanently removes
