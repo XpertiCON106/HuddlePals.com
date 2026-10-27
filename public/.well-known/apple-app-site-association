@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["BCK77N7264.com.huddlepals.ios"],
+        "components": [
+          { "/": "/join", "comment": "Invite links; the code is the fragment" },
+          { "/": "/join/", "comment": "Invite links; the code is the fragment" }
+        ]
+      }
+    ]
+  }
+}

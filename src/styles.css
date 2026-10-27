@@ -814,3 +814,65 @@ body:has(.shell-home) {
     display: none;
   }
 }
+
+.join .lede {
+  margin-bottom: 18px;
+}
+
+.join-open {
+  margin: 0 0 22px;
+}
+
+.join-primary {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.join-primary:hover {
+  background: #dc5b0b;
+  color: var(--white);
+}
+
+.join-primary:focus-visible,
+.copy-code-button:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.invite-code-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 12px;
+}
+
+.invite-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 14px;
+  overflow-wrap: anywhere;
+}
+
+.copy-code-button {
+  appearance: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+
+.copy-code-button:hover {
+  background: #000;
+}
