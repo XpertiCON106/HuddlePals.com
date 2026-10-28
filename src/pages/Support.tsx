@@ -102,7 +102,7 @@ export function Support() {
           <h2>How do I delete my account?</h2>
           <p>
             In the app, go to Profile → Delete account. Deleting your account permanently removes
-            your login, display name, bio, profile photos, and encryption keys, and signs you out.
+            your login, display name, bio, birthday, profile photos, and encryption keys, and signs you out.
             Photos and videos you already deposited stay in the huddle, shown as “Former member,” so
             the group’s album stays intact. Deleting your account doesn’t cancel HuddlePals+:
             cancel it first in Settings → your name → Subscriptions. To ask about a specific photo
