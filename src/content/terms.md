@@ -1,7 +1,6 @@
-
 # HuddlePals Terms of Service
 
-Last updated: October 30, 2026
+Last updated: October 29, 2026
 
 ## 1. Agreement to These Terms
 
@@ -17,7 +16,7 @@ Last updated: October 30, 2026
 
 ## 2. Eligibility and Accounts
 
-**2.1 Minimum age.** You must be at least 13 years old to use the Service. If the law where you live sets a higher minimum age for using an online service like this one, or for doing so without a parent's consent, you must meet that age instead. If you are under 13, do not use the Service. If we learn that we have collected personal information from a child under 13, we will close the account and delete that child's personal information, including any Deposits they posted, as the law requires.
+**2.1 Minimum age.** You must be at least 13 years old to use the Service. If the law where you live sets a higher minimum age for using an online service like this one, or for doing so without a parent's consent, you must meet that age instead. Before signing in, you must enter your birthday accurately. This is a check of the date you provide, not independent verification of your identity or age. You cannot activate an account or access huddles until a birthday showing you are at least 13 is recorded. Your recorded birthday cannot be changed through account settings. If you are under 13, do not use the Service. If we learn that we have collected personal information from a child under 13, we will close the account and delete that child's personal information, including any Deposits they posted, as the law requires.
 
 **2.2 Users under 18.** If you are under 18, or under the age of majority where you live, you may use the Service only with the permission of a parent or legal guardian who has reviewed these Terms. By giving that permission, your parent or guardian agrees to these Terms for themselves and on your behalf and is responsible for your use of the Service. Where the law requires a parent's consent, including consent given through an app store, we may rely on age and consent information that the app store provides. We may limit, suspend, or close an account if the required consent is not given or is withdrawn. Users under 18 have the content removal rights described in Section 4.6.
 
@@ -280,5 +279,3 @@ If you downloaded the app from Apple's App Store, you and HuddlePals acknowledge
 **17.11 California users.** Under California Civil Code Section 1789.3, California users are entitled to the following notice: the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834, or by telephone at (800) 952-5210.
 
 **17.12 Contact.** Questions, complaints, claims, and legal notices about the Service or these Terms: Tahalil Morsilin, doing business as HuddlePals, {{CONTACT_EMAIL}}.
-
-
