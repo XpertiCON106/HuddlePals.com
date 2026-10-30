@@ -230,6 +230,10 @@ async function handleTrack(c: AppContext) {
         is_eu_country: cf.isEUCountry == null ? null : cf.isEUCountry === "1",
         asn: cf.asn != null ? String(cf.asn) : null,
         as_organization: cf.asOrganization ?? null,
+        // From Cloudflare's own request data, with no outside lookup: the
+        // network's name, and Cloudflare's "T1" country code for Tor.
+        isp: cf.asOrganization ?? null,
+        is_tor: cf.country == null ? null : cf.country === "T1",
         colo: cf.colo ?? null,
         http_protocol: cf.httpProtocol ?? null,
         tls_version: cf.tlsVersion ?? null,
