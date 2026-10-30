@@ -157,9 +157,7 @@ because the law can require us to keep reported material.
 
 ## Website analytics
 
-When you visit huddlepals.com, we collect basic analytics and performance
-data to understand how the site is used and keep it working well. We don't
-sell this data or use it for ads.
+We collect basic data analytics to keep things running smoothly.
 
 ## Children
 
