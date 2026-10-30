@@ -1,10 +1,11 @@
 import { createContext, useContext, useEffect, useState, type FormEvent, type ReactNode } from "react";
 import type { Session, SupabaseClient } from "@supabase/supabase-js";
-import { Link, Navigate, Route, Routes, useNavigate } from "react-router-dom";
+import { Link, Navigate, NavLink, Route, Routes, useNavigate } from "react-router-dom";
 import { clearAdminMark, markAdmin } from "../lib/track";
 import { authUrlError, clearAuthUrl, isRecoveryPending, recoveryTokenHash, setRecoveryPending } from "../lib/recovery";
 import { adminApi, ApiError } from "./api";
 import { Dashboard } from "./Dashboard";
+import { StoragePage } from "./Storage";
 import { getSupabase } from "./supabase";
 import { VisitDetail } from "./VisitDetail";
 import "./admin.css";
@@ -230,6 +231,7 @@ function AuthGate({ mode }: { mode: "login" | "app" }) {
         <Routes>
           <Route index element={<Dashboard />} />
           <Route path="visits/:id" element={<VisitDetail />} />
+          <Route path="storage" element={<StoragePage />} />
           <Route path="*" element={<Navigate to="/admin" replace />} />
         </Routes>
       </Shell>
@@ -261,7 +263,10 @@ function Shell({ children }: { children: ReactNode }) {
         <div className="a-wrap a-header-row">
           <div className="a-header-brand">
             <Brand />
-            <span className="a-tag">Analytics</span>
+            <nav className="a-segment a-nav" aria-label="Admin">
+              <NavLink to="/admin" end>Analytics</NavLink>
+              <NavLink to="/admin/storage">Storage</NavLink>
+            </nav>
           </div>
           <div className="a-header-actions">
             <ThemeSwitch />

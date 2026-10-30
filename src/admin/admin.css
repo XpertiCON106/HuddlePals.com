@@ -1432,3 +1432,90 @@ html:has(.hp-admin) {
     padding: 0 9px;
   }
 }
+
+/* Admin nav (header) */
+.a-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  color: var(--a-muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hp-admin .a-nav a:hover {
+  color: var(--a-ink);
+}
+
+.hp-admin .a-nav a.active {
+  background: var(--a-solid);
+  color: var(--a-on-solid);
+}
+
+@media (max-width: 520px) {
+  .a-nav a {
+    padding: 0 9px;
+  }
+}
+
+/* Storage & usage */
+.a-meters {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.a-meter-card {
+  padding: 16px 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.a-meter-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.a-meter-value {
+  font-family: var(--a-serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.a-meter {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--a-surface-2);
+  overflow: hidden;
+}
+
+.a-meter span {
+  display: block;
+  height: 100%;
+  min-width: 2px;
+  border-radius: inherit;
+  background: var(--a-chart);
+}
+
+.a-meter.is-warn span {
+  background: var(--a-brand);
+}
+
+.a-meter.is-alert span {
+  background: var(--a-danger);
+}
+
+.a-notes {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+}
+
+.a-warn {
+  color: var(--a-brand);
+}

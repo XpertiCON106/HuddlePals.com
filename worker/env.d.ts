@@ -10,4 +10,8 @@ interface Env {
   ADMIN_EMAIL: string;
   /** Secret: the admin account's auth user id. */
   ADMIN_USER_ID: string;
+  /** Secret, optional: read-only Cloudflare token (Account Analytics: Read) for the storage page. */
+  CF_ANALYTICS_TOKEN?: string;
+  /** Secret, optional: the Cloudflare account id the token reads. */
+  CF_ACCOUNT_ID?: string;
 }

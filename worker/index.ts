@@ -1,6 +1,7 @@
 import { Hono } from "hono";
 import { registerAnalytics } from "./analytics";
 import { adminDb } from "./supabase";
+import { registerStorage } from "./storage";
 import { registerTrack } from "./track";
 import type { AppEnv } from "./util";
 
@@ -41,6 +42,7 @@ app.post("/api/admin-signout", (c) => {
 
 registerTrack(app);
 registerAnalytics(app);
+registerStorage(app);
 
 app.all("/api/*", (c) => c.json({ error: "Not found" }, 404));
 
