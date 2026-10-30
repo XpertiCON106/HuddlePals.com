@@ -48,15 +48,31 @@ export function Support() {
             <p>
               HuddlePals is in beta on TestFlight. You need an iPhone running iOS 17 or later.
               Install TestFlight from the App Store, then tap the link below to join the beta.
-              Open HuddlePals and sign in with Apple.
+              Open HuddlePals, enter your birthday, then sign in with Apple.
             </p>
           ) : (
             <p>
               HuddlePals is on the App Store. You need an iPhone running iOS 17 or later. Download
-              the app, open it, and sign in with Apple.
+              the app, open it, enter your birthday, then sign in with Apple.
             </p>
           )}
           <DownloadButton />
+        </article>
+        <article>
+          <h2>Why do you ask for my birthday?</h2>
+          <p>
+            We ask before sign-in to check that the date you enter shows you are at least 13.
+            This is an age screen based on your answer, not identity verification. Your birthday
+            is private and is not shown to other huddle members. Once recorded, it cannot be
+            changed in account settings. If it is inaccurate, contact us.
+          </p>
+          <p>
+            If the date shows you are under 13, sign-in stops. The app remembers when you can
+            try again on this device, so signing out or reopening it does not restart the age
+            screen before then. Existing accounts without a recorded birthday must provide it
+            before accessing huddles. If the app cannot confirm that check because of a
+            connection problem, try again when you are online.
+          </p>
         </article>
         <article>
           <h2>How do I start or join a huddle?</h2>
