@@ -1024,7 +1024,18 @@ html:has(.hp-admin) {
 }
 
 .a-detail-grid {
-  align-items: start;
+  align-items: stretch;
+}
+
+/* One column until there is room for two readable columns. */
+@media (min-width: 640px) and (max-width: 979px) {
+  .a-detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.a-fields dt {
+  overflow-wrap: anywhere;
 }
 
 /* Dialogs */

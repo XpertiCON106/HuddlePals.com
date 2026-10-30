@@ -15,7 +15,7 @@ type Detail = {
   related: { id: string; visited_at: string; path: string | null; city: string | null; region_code: string | null; country: string | null }[];
 };
 
-type Field = { label: string; value: (visit: Visit) => unknown };
+type Field = { label: string; value: (visit: Visit) => unknown; mono?: boolean };
 
 const client = (key: string) => (visit: Visit) => visit.client?.[key];
 const yesNo = (value: unknown) => (value == null ? null : value ? "Yes" : "No");
@@ -84,7 +84,7 @@ const GROUPS: { title: string; fields: Field[] }[] = [
       { label: "Data saver", value: (v) => yesNo(v.save_data) },
       { label: "Do Not Track", value: (v) => yesNo(v.client?.dnt) },
       { label: "Model", value: client("model") },
-      { label: "User agent", value: (v) => v.user_agent },
+      { label: "User agent", value: (v) => v.user_agent, mono: true },
     ],
   },
   {
@@ -103,10 +103,10 @@ const GROUPS: { title: string; fields: Field[] }[] = [
   {
     title: "Identity",
     fields: [
-      { label: "Visit", value: (v) => v.id },
-      { label: "Browser id", value: (v) => v.visitor_id },
-      { label: "Session", value: (v) => v.session_id },
-      { label: "Fingerprint", value: (v) => v.fingerprint },
+      { label: "Visit", value: (v) => v.id, mono: true },
+      { label: "Browser id", value: (v) => v.visitor_id, mono: true },
+      { label: "Session", value: (v) => v.session_id, mono: true },
+      { label: "Fingerprint", value: (v) => v.fingerprint, mono: true },
       { label: "Your visit", value: (v) => yesNo(v.is_admin) },
     ],
   },
@@ -209,7 +209,7 @@ export function VisitDetail() {
               {group.fields.map((field) => (
                 <div key={field.label}>
                   <dt>{field.label}</dt>
-                  <dd>{show(field.value(visit))}</dd>
+                  <dd className={field.mono ? "a-mono" : undefined}>{show(field.value(visit))}</dd>
                 </div>
               ))}
             </dl>
@@ -222,7 +222,7 @@ export function VisitDetail() {
             {headers.map(([key, value]) => (
               <div key={key}>
                 <dt className="a-mono">{key}</dt>
-                <dd>{value}</dd>
+                <dd className="a-mono">{value}</dd>
               </div>
             ))}
           </dl>
