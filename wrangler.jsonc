@@ -1,8 +1,31 @@
 {
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "huddlepals",
+  "main": "./worker/index.ts",
   "compatibility_date": "2026-10-27",
+  "compatibility_flags": ["nodejs_compat"],
+  // Served only on the huddlepals.com custom domain: no workers.dev URL and
+  // no preview URLs.
+  "workers_dev": false,
+  "preview_urls": false,
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "single-page-application"
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    // The Worker runs only for the API and the admin page. Every other path
+    // (the site, /.well-known/apple-app-site-association and public/_headers)
+    // is served straight from the static assets, as before.
+    "run_worker_first": ["/api/*", "/admin", "/admin/*"]
+  },
+  // Deletes analytics older than 13 months (worker/index.ts), daily.
+  "triggers": { "crons": ["17 4 * * *"] },
+  "vars": {
+    "SUPABASE_URL": "https://xeeulvshzlciyvqerdbc.supabase.co",
+    // Public anon key (the browser's key; RLS applies). Not a secret.
+    "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhlZXVsdnNoemxjaXl2cWVyZGJjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQyMDUyOTUsImV4cCI6MjA5OTc4MTI5NX0.wWmqTAHpkYowi_Lxvjvb5vyfxjsbp18I8M1G51e0QKE"
+  },
+  // Set with `wrangler secret put` (see README). Never in this file.
+  "secrets": {
+    "required": ["SUPABASE_SERVICE_ROLE_KEY", "ADMIN_EMAIL", "ADMIN_USER_ID"]
   }
 }

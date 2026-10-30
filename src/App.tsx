@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { About } from "./pages/About";
@@ -8,6 +8,9 @@ import { NotFound } from "./pages/NotFound";
 import { Privacy } from "./pages/Privacy";
 import { Support } from "./pages/Support";
 import { Terms } from "./pages/Terms";
+
+// The analytics dashboard. Unlinked, not indexed, and loaded only when opened.
+const AdminApp = lazy(() => import("./admin/AdminApp"));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -22,6 +25,14 @@ export function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
+        <Route
+          path="admin/*"
+          element={
+            <Suspense fallback={null}>
+              <AdminApp />
+            </Suspense>
+          }
+        />
         <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />

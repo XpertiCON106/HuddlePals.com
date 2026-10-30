@@ -1,8 +1,14 @@
+import { useEffect } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
+import { trackPage } from "../lib/track";
 import { DownloadButton } from "./DownloadButton";
 
 export function Layout() {
-  const home = useLocation().pathname === "/";
+  const { pathname } = useLocation();
+  const home = pathname === "/";
+  useEffect(() => {
+    trackPage(pathname);
+  }, [pathname]);
   return (
     <div className={home ? "shell shell-home" : "shell"}>
       <a className="skip" href="#main">

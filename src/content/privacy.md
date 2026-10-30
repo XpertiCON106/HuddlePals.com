@@ -30,8 +30,9 @@ described under "How your data is stored and protected."
 | **Subscription records** (only if you get HuddlePals+): the plan (monthly or yearly), Apple's transaction IDs, when it was bought and when it renews or ends, any billing grace period, refund or revocation, whether it will renew, and whether it was a test purchase | To give you Plus and keep it in step with Apple, and so that one subscription unlocks only one account. Apple handles payment: we never receive your card or billing details | Yes |
 
 We do **not** use third-party advertising or tracking, we do **not** sell your
-data, and we do **not** collect location, contacts, or device-tracking
-identifiers.
+data, and the app does **not** collect location, contacts, or device-tracking
+identifiers. This website keeps its own visit statistics, described under
+"Website analytics."
 
 ## How your data is stored and protected
 
@@ -153,6 +154,12 @@ only to review the report and to meet our legal obligations, such as
 reporting child sexual abuse material to NCMEC. Reports stay on file even if
 the person who filed one, or the person reported, deletes their account,
 because the law can require us to keep reported material.
+
+## Website analytics
+
+When you visit huddlepals.com, we collect basic analytics and performance
+data to understand how the site is used and keep it working well. We don't
+sell this data or use it for ads.
 
 ## Children
 
